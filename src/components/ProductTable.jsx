@@ -1,4 +1,5 @@
 import ProductCategoryRow from "./ProductCategoryRow"
+import ProductRow from "./ProductRow"
 
 
 const ProductTable = ({products}) => {
@@ -10,14 +11,14 @@ const ProductTable = ({products}) => {
       rows.push (
         <ProductCategoryRow 
           category={product.category}
-          key={product.Category}/>
+          key={product.category}/>
       )
     }
-    // rows.push(
-    //   <ProductRow 
-    //     product={product}
-    //     key={product.name}/>
-    // )
+    rows.push(
+      <ProductRow 
+        product={product}
+        key={product.name}/>
+    )
     lastCategory = product.category
   })
   return (

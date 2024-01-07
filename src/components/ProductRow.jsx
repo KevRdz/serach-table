@@ -10,7 +10,7 @@ const ProductRow = ({product}) => {
     <div>
       <tr>
         <td>{name}</td>
-        <td>{ProductRow.price}</td>
+        <td>{product.price}</td>
       </tr>
     </div>
   );
