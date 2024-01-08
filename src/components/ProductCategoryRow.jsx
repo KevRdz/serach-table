@@ -2,13 +2,17 @@
 
 const ProductCategoryRow = ({category}) => {
   return (
-    <div>
-      <tr>
-        <th colSpan="2">
-          {category}
-        </th>
-      </tr>
-    </div>
+    <>
+      <table>
+        <tbody>
+          <tr>
+            <th colSpan="2">
+              {category}
+            </th>
+          </tr>
+        </tbody>
+      </table>
+    </>
   );
 }
 

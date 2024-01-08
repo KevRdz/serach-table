@@ -7,12 +7,12 @@ const ProductRow = ({product}) => {
     </span>
 
   return (
-    <div>
+    <>
       <tr>
         <td>{name}</td>
         <td>{product.price}</td>
       </tr>
-    </div>
+    </>
   );
 }
 
